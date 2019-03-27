@@ -79,25 +79,55 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
+An example looks like this: // Comment should be put here.
+
+// should be put before a comment.
+
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
+Save it as a .html file, and open it with a web browser.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
+alert() and console.log().
+
+The alert() function pops up an alert box with a specified message and an OK button. It is intended to make sure a user sees the message.
+
+The console.log() function writes a message to the console, which is used for testing.
+
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+
+alert("hello") would have to comment out.
+
+?
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
+Change the string value "A name" of the document.querySelector('h1').innerHTML = "A name"; to my name.
+
 * **What does the word `document` represent in this code? Explain briefly.**
+
+document is the place where querySelector search for and identify key elements.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
+The querySelector().innerHTML returns the HTML content of the first element that matches specified selector in the document -- '#items'. The getElementsByTagName().length returns all elements in the document with the specified tag name -- "li", and counts its length.
+
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
+White.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
+Because the color code in background-color: #b3b3b3; represents gray, and the color code in border: 3px solid #FFFFFF; represents white.
+
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
+It requires me to copy a text, so I think the function copyFunction would work. It also requires me to highlight one of the universities, which means I have to locate the division containing universities in the HTML document. The method that would enable me to do so would be querySelector. Then I found that universities is within a division with the id="cheer", so I assigned the text value to it. Then added oncopy="copyFunction()>" before the McGill University because oncopy would execute the copyFunction() when the user copies the content of the element.
+
+I figured it out becasue Jackie showed in lecture when she highlighted and copied the University of Michigan, "Go Blue" will appear on the bottom, so I went to find out how she did it in the code, trying to understand and mimic it.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -112,8 +142,6 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
-
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
 
@@ -124,11 +152,30 @@ function handleClick(){
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+It is because of this block of code:
+
+```js
+<style type="text/css">
+    .error{
+        color: red;
+    }
+    .good {
+        color: blue;
+    }
+```
+CSS determines visuals applied to structure. .error block means when the input isn't valid, the output should be in red; .good means when the input is valid, the output should be in blue.
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+It creates a regular expression that will check if the line starts with any single character in the range a-z or A-Z.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+JS uses curly brackets to enclose the statements and specify the scope of a condition, whereas Python uses colon to do so.
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+The number determined how long the animation will run.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
