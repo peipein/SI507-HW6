@@ -63,7 +63,6 @@ Below are a bunch of questions and indications of things to do. For each indicat
 * Ruchi Ookalkar (ruchido)
 * Innocent Obi (innoobi)
 * Zhen Wang (alejwang)
-* Peipei Nie (niep)
 * etc.
 
 ## Questions & code instructions
