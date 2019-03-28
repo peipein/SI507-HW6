@@ -184,7 +184,7 @@ I learned that ^ represents the start-of-line and $ represents the end-of-line. 
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
-JS uses curly brackets to enclose the statements and specify the scope of a condition, whereas Python uses colon and indentation to do so. JS uses brackets to enclose conditional statement followed by if/else, whereas conditional statements are directly followed by the if/else in Python.
+JS uses curly brackets to enclose the statements and specify the scope of the condition, whereas Python uses colon and indentation to do so. JS uses brackets to enclose conditional statements followed by if/else, whereas conditional statements are directly followed by the if/else in Python.
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
